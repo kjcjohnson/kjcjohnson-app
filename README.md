@@ -41,12 +41,11 @@ Notes:
 
 ## Deploy
 
-
 - `heroku login`
 - `heroku create [yourappname]` Make up a great app name.
 - `git push heroku master` (If you dont have an ssh key on Heroku see below.)  
 
-Heroku will install dependences and launch your app here. Magic!
+##### Heroku will install dependences and launch your app here. Magic!
 
 - `heroku ps:scale web=1` This gives your app 1 `web worker`.
 - `heroku open` This will go to yourappname.herokuapp.com
@@ -59,6 +58,13 @@ SSH Key Upload:
 - type `cat .ssh/id_rsa.pub` again and copy only the printed lines.
 - go to your [account page](http://dashboard.heroku.com/account) and paste in the ssh key.
 
-## Domain Setup
+## Next Time you Dev
 
+`source venv/bin/activate`  
+`python hello.py` to run locally  
+`git commit -am "commit message"`  
+`git push heroku master`  will update Heroku, no need to scale
+`heroku open`
+
+## Domain Setup
 
