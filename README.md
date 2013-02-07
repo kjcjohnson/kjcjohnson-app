@@ -12,7 +12,7 @@ You’ll learn how to register a domain name, configure your DNS, and deploy a b
 - Fingers to type with.
 
 ### Things we're gonna do.
-1. Write a dead simple app in [Python](http://python.org) using [Flask](http://flask.pocoo.org/)
+1. Write a simple app in [Python](http://python.org) using [Flask](http://flask.pocoo.org/)
 2. Run our app locally.
 3. Deploy said app to *the cloud* via Heroku.
 4. Register a domain.
@@ -61,10 +61,23 @@ SSH Key Upload:
 ## Next Time you Dev
 
 `source venv/bin/activate`  
-`python hello.py` to run locally  
+`python hello.py` to run locally.  
 `git commit -am "commit message"`  
-`git push heroku master`  will update Heroku, no need to scale
+`git push heroku master` Update Heroku, no need to scale.  
 `heroku open`
+
+## Change to your own GitHub Repo
+
+I'd love it if this repo were a starting point for your next big project. Create a repo on GitHub, and reset the origin url with the new one it gives you.
+`git remote set-url origin git@github.com:you/your-repo.git`  
+`git push origin master`
 
 ## Domain Setup
 
+- Find a domain.
+- Pay for the domain.
+- `heroku domains:add www.example.com`
+- Add a DNS record with your provider's website:   
+	CNAME | www.example.com | yourappp.herokuapp.com
+
+- [More Heroku Domain Help](https://devcenter.heroku.com/articles/custom-domains)

@@ -5,11 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return 'This is a home page!'
-
-@app.route('/hello')
-def hello():
-    return 'Well hello.'
+	return 'Hello Michigan Hackers'
 
 if __name__ == '__main__':
 	# Bind to PORT if defined (environment variable on heroku)
