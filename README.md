@@ -4,7 +4,7 @@
 
 You’ll learn how to register a domain name, configure your DNS, and deploy a basic website using Heroku!
 
-
+----
 ### Things you should have already:
 - [GitHub](http://github.com) account.
 - [Heroku](http://heroku.com) account.
@@ -31,13 +31,14 @@ Now we are ready to run it!
 
 - Type `python hello.py` to run the app.
 - Navigate to `http://localhost:3000/`
-- Notice if you make changes to the file the server will restart.
+- Notice if you make changes to the file the server will restart automatically.
 
 Notes:
 - The `Procfile` is used by Heroku to start your app.
 - Heroku uses `Foreman` to run your app, you can too! Try `foreman start`.
 - If you add new pip modules use `pip freeze > requirements.txt` before deploying.
 (This way Heroku knows what your dependencies are.)
+- More [Heroku deployment](https://devcenter.heroku.com/articles/python#declare-process-types-with-procfile) details.
 
 ## Deploy
 
@@ -47,7 +48,7 @@ Notes:
 
 ##### Heroku will install dependences and launch your app here. Magic!
 
-- `heroku ps:scale web=1` This gives your app 1 `web worker`.
+- `heroku ps:scale web=1` This gives your app one `web worker`.
 - `heroku open` This will go to yourappname.herokuapp.com
 - Grab a beer.
 
@@ -58,7 +59,7 @@ SSH Key Upload:
 - type `cat .ssh/id_rsa.pub` again and copy only the printed lines.
 - go to your [account page](http://dashboard.heroku.com/account) and paste in the ssh key.
 
-## Next Time you Dev
+## Next Time You Develop
 
 `source venv/bin/activate`  
 `python hello.py` to run locally.  
@@ -66,7 +67,7 @@ SSH Key Upload:
 `git push heroku master` Update Heroku, no need to scale.  
 `heroku open`
 
-## Change to your own GitHub Repo
+## Change to Your Own GitHub Repo
 
 I'd love it if this repo were a starting point for your next big project. Create a repo on GitHub, and reset the origin url with the new one it gives you.
 `git remote set-url origin git@github.com:you/your-repo.git`  
