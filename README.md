@@ -29,7 +29,7 @@ You’ll learn how to register a domain name, configure your DNS, and deploy a b
 
 Now we are ready to run it!
 
-- Type `python hello.py` to run the app.
+- Type `python server.py` to run the app.
 - Navigate to `http://localhost:3000/`
 - Notice if you make changes to the file the server will restart automatically.
 
@@ -62,7 +62,7 @@ SSH Key Upload:
 ## Next Time You Develop
 
 `source venv/bin/activate`  
-`python hello.py` to run locally.  
+`python server.py` to run locally.  
 `git commit -am "commit message"`  
 `git push heroku master` Update Heroku, no need to scale.  
 `heroku open`
@@ -80,5 +80,4 @@ I'd love it if this repo were a starting point for your next big project. Create
 - `heroku domains:add www.example.com`
 - Add a DNS record with your provider's website:   
 	CNAME | www.example.com | yourappp.herokuapp.com
-
 - [More Heroku Domain Help](https://devcenter.heroku.com/articles/custom-domains)
