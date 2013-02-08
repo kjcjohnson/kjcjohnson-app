@@ -10,8 +10,8 @@ app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 @app.route('/')
 def index():
 	obj = {
-		"title": "Michigan Hackers",
-		"text": "Now go hack!"
+		"title": "Keith Johnson",
+		"text": "This is my test text."
 	};
 	return render_template('index.jade', **obj)
 
